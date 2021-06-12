@@ -30,6 +30,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    
+
+    &__background{
+      background: rgba(18, 18, 18, .2); 
+      min-height: inherit; 
+    }
 
     &__info{
         display: flex;
