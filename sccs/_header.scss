@@ -1,0 +1,119 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 576px) { 
+            width: 540px;
+     }
+
+     @media (min-width: 768px) { 
+            width: 720px;
+     }
+
+     @media (min-width: 992px) { 
+            width: 960px;
+     }
+
+     @media (min-width: 1200px) { 
+            width: 1140px;
+     }
+
+     @media (min-width: 1400px) { 
+            width: 1320px;
+     }
+}
+
+.app-header{
+    background-image: url(../assets/img/pexels-photo-top.png);
+    min-height: 889px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 270px;
+    }
+
+    &__title{
+        margin: 0;
+        /*@include font('Josefin Sans',700,48px,null,var(#ffffff),uppercase)*/
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    &__paragraph{
+        font-family: 'Josefin Sans',sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 0;
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: row;
+        outline: none;
+        border: 1px solid black;
+        margin-top: 50px;
+    }
+
+    &__field{
+        flex-grow: 2;
+        border: none;
+    }
+
+    &__nav-block{
+        background-color:#5474fd ;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 998;
+        min-height: 80px;
+        left: 0;
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        max-height: 80px;
+        width: inherit;
+        position: absolute;
+        bottom: 0;
+        z-index: 999;
+        align-items: center;
+        justify-content: space-between;
+        color: #ffffff;
+        
+        &__list{
+            list-style: none;
+            display: flex;
+            width: 50%;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__item{
+            font-size: 14px;
+            font-family: 'Aleo',sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-right: 50px;
+        }
+
+        &__logo{
+            font-size: 24px;
+            font-family: 'Josefin Sans',sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            max-height: 80px;
+        }
+
+
+    }
+}
+
